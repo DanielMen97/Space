@@ -1,6 +1,11 @@
 .navbar_container{
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+  font-family: "Barlow Condensed";
+  font-size: 14px;
+  letter-spacing: 2.35px;
 }
 
 .navbar_container img {
@@ -10,24 +15,36 @@
 .line{
   width: 100%;
   position: relative;
-  bottom: -10px;
   right: -40px;
   border-top: solid rgb(103, 103, 103) 2px;
 }
 
 .navbar{
-  padding: 35px 140px 35px 100px;
-  background-color: #fff9
+  padding: 0 140px 0 100px;
+  background: #fff1;
+  backdrop-filter: blur(25px);
 }
 
 .list_container{
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
   color: white;
 }
 
 .list_item{
   display: flex;
   gap: 10px;
-  margin: 0 30px;
+  padding: 35px 0;
+  cursor: pointer;
+  border-bottom: transparent 2px solid;
 }
+
+.list_item:hover{
+  transition: 0.5s;
+  border-bottom: white 2px solid;
+}
+
+.list_item span{
+  font-weight: bold;
+}
+

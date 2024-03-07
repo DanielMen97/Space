@@ -7,7 +7,6 @@ export const Navbar = () => {
     <div className={styles.navbar_container}>
       <img src={logo}></img>
       <div className={styles.line}>
-        hola
       </div>
       <nav className={styles.navbar}>
        <ul className={styles.list_container}>
