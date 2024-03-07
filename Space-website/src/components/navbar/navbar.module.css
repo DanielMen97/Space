@@ -1,0 +1,34 @@
+.navbar_container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar_container img {
+  padding-right: 40px;
+}
+
+.line{
+  padding: 20px 150px 20px 300px;
+  position: relative;
+  bottom: -30px;
+  right: -40px;
+  border-top: solid rgb(103, 103, 103) 2px;
+}
+
+.navbar{
+  padding: 35px 140px 35px 100px;
+  background-color: #fff9
+}
+
+.list_container{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.list_item{
+  display: flex;
+  gap: 10px;
+  margin: 0 30px;
+}
