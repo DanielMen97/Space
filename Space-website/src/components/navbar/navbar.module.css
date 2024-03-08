@@ -4,7 +4,7 @@
   margin-bottom: 20px;
   width: 100%;
   font-family: "Barlow Condensed";
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 2.35px;
 }
 
@@ -13,14 +13,14 @@
 }
 
 .line{
-  width: 100%;
+  width: 40%;
   position: relative;
   right: -40px;
   border-top: solid rgb(103, 103, 103) 2px;
 }
 
 .navbar{
-  padding: 0 140px 0 100px;
+  padding: 0 160px 0 170px;
   background: #fff1;
   backdrop-filter: blur(25px);
 }
@@ -36,15 +36,29 @@
   gap: 10px;
   padding: 35px 0;
   cursor: pointer;
-  border-bottom: transparent 2px solid;
+  
 }
 
 .list_item:hover{
-  transition: 0.5s;
-  border-bottom: white 2px solid;
+  
 }
 
 .list_item span{
   font-weight: bold;
+}
+
+.Links{
+  text-decoration: none;
+  color: white;
+  border-bottom: transparent 3px solid; 
+}
+
+.Links:hover{
+  transition: 0.5s;
+  border-bottom: rgb(188, 188, 188) 3px solid;
+}
+
+.IsActive{
+ border-bottom: white 3px solid;;
 }
 

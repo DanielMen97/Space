@@ -1,13 +1,18 @@
 import styles from './App.module.css';
 import { Home } from './components/home/home';
 import { Navbar } from './components/navbar/navbar';
+import { BrowserRouter } from "react-router-dom";
+import { MyRoutes } from './components/routes/myroutes';
 
 function App() {
 
   return (
     <div className={styles.app}>
-      <Navbar />
-      <Home />
+      <BrowserRouter>
+        <Navbar />
+        <MyRoutes></MyRoutes>
+      </BrowserRouter>
+      
     </div>
   )
 }
