@@ -39,26 +39,24 @@
   
 }
 
-.list_item:hover{
-  
-}
-
 .list_item span{
   font-weight: bold;
 }
 
-.Links{
+.LinkIsDisable{
   text-decoration: none;
   color: white;
   border-bottom: transparent 3px solid; 
 }
 
-.Links:hover{
+.LinkIsDisable:hover{
   transition: 0.5s;
   border-bottom: rgb(188, 188, 188) 3px solid;
 }
 
-.IsActive{
- border-bottom: white 3px solid;;
+.LinkIsActive{
+  text-decoration: none;
+  color: white;
+  border-bottom: white 3px solid;;
 }
 
