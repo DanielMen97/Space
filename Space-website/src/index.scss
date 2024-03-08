@@ -1,0 +1,14 @@
+@import "./styles/global.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-primary;
+  background-image: url('./assets/home/background-home-desktop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}

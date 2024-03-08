@@ -1,5 +1,5 @@
-import styles from './App.module.css';
-import { Navbar } from './components/navbar/navbar';
+import styles from './App.module.scss';
+import { Navbar } from './components/shared/navbar/navbar';
 import { BrowserRouter } from "react-router-dom";
 import { MyRoutes } from './components/routes/myroutes';
 
