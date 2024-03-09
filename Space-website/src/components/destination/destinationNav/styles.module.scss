@@ -1,0 +1,31 @@
+@import "../../../styles/global.scss";
+
+.navbar{
+  font-family: $font-secondary;
+  font-size: 20px;
+  color: $color-primary;
+  letter-spacing: 2.75px;
+
+  .listContainer{
+    display:flex;
+    list-style: none;
+    gap: 30px;
+
+    .listItem{
+      text-decoration: none;
+      padding: 10px 0;
+      border-bottom: 2px solid transparent;
+      cursor: pointer;
+
+      &:hover{
+        transition: 0.5s;
+        border-bottom: 2px solid rgb(188, 188, 188);
+      }
+    }
+    .listItemActive{
+      padding: 10px 0;
+      border-bottom: 2px solid $color-secondary;
+      color: $color-secondary;
+    }
+  }
+}

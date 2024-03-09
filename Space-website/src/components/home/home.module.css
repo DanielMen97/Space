@@ -55,6 +55,11 @@
   cursor: pointer;
 }
 
+.link{
+  color: black;
+  text-decoration: none;
+}
+
 .home_explore p:hover{
   transition: 0.3s;
   box-shadow: -5px -4px 0px 75px rgb(53, 52, 65);
