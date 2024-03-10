@@ -6,10 +6,12 @@
   align-items: center;
   gap: 10px;
   font-family: $font-secondary;
+  padding: 20px 0 20px 70px;
 
   .number, .title {
     font-size: 1.8rem;
     font-weight: 400;
+    letter-spacing: 5px;
   } 
 
   .number {
