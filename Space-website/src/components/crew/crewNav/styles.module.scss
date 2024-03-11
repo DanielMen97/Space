@@ -4,21 +4,22 @@
  
   .listContainer{
     display: flex;
-    gap: 40px;
+    gap: 25px;
+    padding-bottom: 30px;
 
     .listItem{
       list-style: none;
 
       .buttonNavActive, .buttonNav{
-        padding: 12px;
-        border-radius: 12px;
+        padding: 8px;
+        border-radius: 8px;
         border: none;
         cursor: pointer;
 
       }
 
       .buttonNav{
-        background-color: rgb(188, 188, 188);
+        background-color: #4d4c4cee
 
       }
       

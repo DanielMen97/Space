@@ -1,0 +1,24 @@
+@import "../../../styles/global.scss";
+
+.headerContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  font-family: $font-secondary;
+
+  .number, .title {
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 5px;
+  } 
+
+  .number {
+    color: #888888ee;
+  }
+
+  .title {
+    color: white;
+  }
+
+}

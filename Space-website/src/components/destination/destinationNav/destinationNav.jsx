@@ -16,7 +16,10 @@ export const DestinationNav = (props) => {
       {
         data.destinations.map((element, index) => {
           return (
-            <li className={(element.name === isActive.name) ? styles.listItemActive : styles.listItem} onClick={() => handleIsSelect(element)} key={index}>
+            <li 
+              className={(element.name === isActive.name) ? styles.listItemActive : styles.listItem} 
+              onClick={() => handleIsSelect(element)} 
+              key={index}>
               {element.name}
             </li>
           )

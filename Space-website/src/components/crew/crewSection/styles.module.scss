@@ -1,0 +1,61 @@
+@import '../../../styles/global.scss';
+
+.sectionContainer{
+  color: $color-secondary;
+
+  .headerContainer{
+    display: flex;
+    font-family: $font-secondary;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0 20px 0;
+
+    .number, .title{
+      font-size: 1.8rem;
+      font-weight: 400;
+      letter-spacing: 5px;
+    }
+
+    .number{
+      color: #888888ee;
+    }
+
+    .title{
+      color: white;
+    }
+  }
+
+  .textContainer{
+    display: flex;
+    flex-direction: column;
+    padding-top: 90px;
+    height: 480px;
+    width: 700px;
+    gap: 20px;
+
+    .role{
+      font-size: 32px;
+      text-transform: uppercase;
+      color: #888888ee;
+    }
+
+    .name{
+      font-size: 56px;
+      text-transform: uppercase;
+      padding-bottom: 15px;
+    }
+
+    .bio{
+      font-family: sans-serif;
+      color: $color-primary;
+      padding-right: 200px;
+      line-height: 30px;
+    }
+
+  }
+
+  .navbarContainer{
+
+  }
+}
