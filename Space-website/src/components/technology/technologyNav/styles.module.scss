@@ -1,0 +1,30 @@
+@import '../../../styles/global.scss';
+
+.navbar{
+
+  .listContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+    .listItemActive, .listItem{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      font-size: 35px;
+      color: $color-secondary; 
+      padding: 18px 30px;
+      border-radius: 38px;
+      border: 0.5px solid rgb(188, 188, 188);
+      cursor: pointer;
+    }
+
+    .listItemActive{
+      background-color: white;
+      color: black;
+
+    }
+
+  }
+}

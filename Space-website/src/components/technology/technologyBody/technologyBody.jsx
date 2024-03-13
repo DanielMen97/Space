@@ -1,7 +1,7 @@
 import styles from './styles.module.scss';
 import React from 'react';
 import { TechnologyHeader } from '../technologyHeader/technologyHeader';
-import { TechnologyContent } from '../TechnologyContent/TechnologyContent';
+import { TechnologyContent } from '../technologyContent/technologyContent';
 
 export const TechnologyBody = () => {
 

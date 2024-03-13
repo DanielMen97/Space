@@ -4,7 +4,7 @@ import styles from './styles.module.scss';
 
 export const TechnologyNav = (props) => {
 
-  const [isActive, setIsActive] = useState({});
+  const [isActive, setIsActive] = useState({"name": "Launch vehicle"});
 
   const handleSelect = (element) => {
     setIsActive(element)
