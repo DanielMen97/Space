@@ -65,3 +65,28 @@
   box-shadow: -5px -4px 0px 75px #fff1;
 }
 
+@media(max-width: 768px) {
+
+  .home_container{
+    flex-direction: column;
+    padding-right: 30px;
+    align-items: center;
+  }
+
+  .home_section{
+    align-items: center;
+  }
+
+  .title{
+    font-size: 180px;
+  }
+
+  .home_section p{
+    padding-right: 0;
+  }
+  
+  .home_explore{
+    margin: 150px 0 0 0;
+  }
+}
+

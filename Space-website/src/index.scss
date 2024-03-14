@@ -12,3 +12,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@media(max-width: 768px) {
+
+  body {
+    background-image: url('./assets/home/background-home-tablet.jpg');
+  }
+  
+}

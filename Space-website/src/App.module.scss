@@ -1,3 +1,11 @@
 .app{
   padding: 40px 0 0 50px;
 }
+
+@media(max-width: 768px) {
+
+  .app{
+    padding: 0 0 0 30px;
+  }
+  
+}

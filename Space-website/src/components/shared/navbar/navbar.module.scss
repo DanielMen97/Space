@@ -54,7 +54,6 @@
 
 }
 
-
 .list_item {
   display: flex;
   padding: 35px 0;
@@ -62,4 +61,30 @@
 } span {
   display: flex;
   gap: 10px;
+}
+
+@media (max-width: 768px) {
+
+  .navbar_container {
+    justify-content: space-between;
+
+  .navbar{
+    padding: 0 60px !important;
+
+    .list_container {
+
+      .list_item{
+        padding: 32px 0;
+
+        strong{
+          display: none;
+        }
+      }
+    }
+  }
+  .line{
+    display: none;
+  }
+  }
+  
 }
