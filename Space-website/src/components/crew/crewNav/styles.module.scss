@@ -30,3 +30,30 @@
     }
   }
 }
+
+@media(max-width: 768px) {
+
+  .navbarContainer{
+ 
+    .listContainer{
+  
+      .listItem{
+  
+        .buttonNavActive, .buttonNav{
+          padding: 6px;
+          border-radius: 6px;
+  
+        }
+  
+        .buttonNav{
+  
+        }
+        
+        .buttonNavActive{
+  
+        }
+      }
+    }
+  }
+
+}
