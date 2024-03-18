@@ -1,4 +1,4 @@
-import { React, useState } from 'react';
+import { React, useState, useEffect } from 'react';
 import { TechnologyNav } from '../technologyNav/technologyNav';
 import styles from './styles.module.scss'
 
@@ -17,7 +17,16 @@ export const TechnologyContent = () => {
     setInfoSelect(itemSelect)
   }
 
-  console.log(window.innerWidth)
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth)
+    }
+    window.addEventListener('resize', handleResize)
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    };
+  }, [])
 
   return (
     <div className={styles.contentContainer}>
@@ -33,7 +42,7 @@ export const TechnologyContent = () => {
       </section>
       <div className={styles.imageContainer}>
         {
-          (window.innerWidth <= 768 ) ? <img src={infoSelect.images.landscape}></img> : <img src={infoSelect.images.portrait}></img>
+          (windowWidth <= 768) ? <img className={styles.imageTech} src={infoSelect.images.landscape}></img> : <img className={styles.imageTech} src={infoSelect.images.portrait}></img>
         }
       </div>
     </div>

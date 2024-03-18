@@ -37,6 +37,8 @@
     }
 
     .imageContainer{
+      width: 700px;
+      height: 100%;
 
     }
   }
@@ -73,8 +75,11 @@
   
       .imageContainer{
 
-        img{
-          content: url("./src/assets/technology/image-launch-vehicle-landscape.jpg");
+        .imageTech{
+          // width: 688px;
+          // position: relative;
+          // left: -77px;
+          
         }
   
       }
