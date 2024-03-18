@@ -22,3 +22,13 @@
   }
 
 }
+
+@media (max-width: 768px) {
+  .headerContainer {
+
+    .number, .title {
+      font-size: 20px;
+    } 
+ 
+  }
+}

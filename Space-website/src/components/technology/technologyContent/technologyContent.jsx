@@ -8,7 +8,7 @@ export const TechnologyContent = () => {
     "name": "Launch vehicle",
     "images": {
       "portrait": "./src/assets/technology/image-launch-vehicle-portrait.jpg",
-      "landscape": "./src/assets//technology/image-launch-vehicle-landscape.jpg"
+      "landscape": "./src/assets/technology/image-launch-vehicle-landscape.jpg"
     },
     "description": "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!"
   })
@@ -17,7 +17,7 @@ export const TechnologyContent = () => {
     setInfoSelect(itemSelect)
   }
 
-  console.log(infoSelect)
+  console.log(window.innerWidth)
 
   return (
     <div className={styles.contentContainer}>
@@ -32,7 +32,9 @@ export const TechnologyContent = () => {
         </article>
       </section>
       <div className={styles.imageContainer}>
-        <img src={infoSelect.images.portrait} />
+        {
+          (window.innerWidth <= 768 ) ? <img src={infoSelect.images.landscape}></img> : <img src={infoSelect.images.portrait}></img>
+        }
       </div>
     </div>
 

@@ -41,3 +41,44 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+
+  .contentContainer{
+    flex-direction: column-reverse;
+  
+    .sectionContainer{
+      flex-direction: column;
+  
+      .navbarContainer{
+  
+      }
+  
+      .articleContainer{
+
+  
+        .label{
+
+  
+        }
+  
+        .name{
+
+        }
+  
+        .description{
+
+        }
+      }
+  
+      .imageContainer{
+
+        img{
+          content: url("./src/assets/technology/image-launch-vehicle-landscape.jpg");
+        }
+  
+      }
+    }
+  }
+  
+}
