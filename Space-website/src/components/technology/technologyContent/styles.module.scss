@@ -13,7 +13,7 @@
     }
 
     .articleContainer{
-      padding: 0 150px 0 60px;
+      padding: 0 123px 0 60px;
       max-height: 248px;
 
       .label{
@@ -26,7 +26,7 @@
       .name{
         padding: 20px 0 20px 0;
         text-transform: uppercase;
-        font-size: 56px;
+        font-size: 49px;
       }
 
       .description{
@@ -34,17 +34,20 @@
         font-family: sans-serif;
         line-height: 30px;
       }
-    }
+    }    
+  }
+  .imageContainer{
 
-    .imageContainer{
-      width: 700px;
+    .imageTechPortrait{
+      width: 500px;
       height: 100%;
-
     }
+
   }
 }
 
-@media (max-width: 768px) {
+
+@media(max-width: 768px) {
 
   .contentContainer{
     flex-direction: column-reverse;
@@ -52,37 +55,40 @@
     .sectionContainer{
       flex-direction: column;
   
-      .navbarContainer{
-  
-      }
-  
       .articleContainer{
+        padding: 30px 120px;
+        text-align: center;
+        min-height: 325px;
 
-  
         .label{
-
-  
+          font-size: 18px;
         }
   
         .name{
-
+          font-size: 42px;
         }
   
         .description{
+          font-size: 15px;
+          line-height: 28px;
 
         }
       }
   
-      .imageContainer{
+    }
 
-        .imageTech{
-          // width: 688px;
-          // position: relative;
-          // left: -77px;
-          
-        }
-  
-      }
+    .imageContainer{
+      display: flex;
+      width: 768px;
+      height: 310px;
+      position: relative;
+      left: -30px;
+      margin: 30px 0;
+      
+      .imageTechLandscape {
+        width: 100%;
+      } 
+
     }
   }
   

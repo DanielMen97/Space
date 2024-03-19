@@ -25,18 +25,23 @@
       color: black;
 
     }
-
   }
 }
 
 @media (max-width: 768px) {
 
   .navbar{
+    padding: 20px 0 10px;
 
     .listContainer{
       flex-direction: row;
-  
+      gap: 16px;
+
+      .listItemActive, .listItem{
+        font-size: 20px;
+        padding: 14px 22px;
+        border-radius: 50%;
+      }
     }
-  }
-  
+  }  
 }

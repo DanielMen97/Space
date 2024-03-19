@@ -42,12 +42,12 @@ export const TechnologyContent = () => {
       </section>
       <div className={styles.imageContainer}>
         {
-          (windowWidth <= 768) ? <img className={styles.imageTech} src={infoSelect.images.landscape}></img> : <img className={styles.imageTech} src={infoSelect.images.portrait}></img>
+          (windowWidth <= 768) ? 
+            <img className={styles.imageTechLandscape} src={infoSelect.images.landscape}></img> : 
+            <img className={styles.imageTechPortrait} src={infoSelect.images.portrait}></img>
         }
       </div>
     </div>
-
-
   )
 }
 
