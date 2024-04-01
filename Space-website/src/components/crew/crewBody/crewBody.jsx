@@ -1,8 +1,8 @@
 import styles from './styles.module.scss';
-import {React, useState } from 'react';
+import { React, useState } from 'react';
 import { CrewSection } from '../crewSection/crewSection';
 import { CrewImage } from '../crewImage/crewImage';
-
+import { CrewHeader } from '../crewHeader/crewHeader';
 
 export const CrewBody = () => {
 
@@ -16,9 +16,12 @@ export const CrewBody = () => {
   }
 
   return (
-    <main className={styles.crewContainer}>   
-      <CrewSection select={imageSelect}/>
-      <CrewImage select={isImageSelect}/>
+    <main className={styles.crewContainer}>
+      <CrewHeader />
+      <div>
+        <CrewSection select={imageSelect} />
+        <CrewImage select={isImageSelect} />
+      </div>
     </main>
   )
 }

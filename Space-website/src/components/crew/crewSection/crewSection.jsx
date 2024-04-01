@@ -21,10 +21,6 @@ export const CrewSection = (props) => {
 
   return (
     <section className={styles.sectionContainer}>
-      <div className={styles.headerContainer}>
-        <h2 className={styles.number}>02</h2>
-        <h2 className={styles.title}>MEET YOUR CREW</h2>
-      </div>
       <article className={styles.textContainer}>
         <p className={styles.role}>{isSelect.role}</p>
         <p className={styles.name}>{isSelect.name}</p>

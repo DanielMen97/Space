@@ -1,5 +1,8 @@
+@import '../../../styles/global.scss';
+
 .crewContainer{
   display: flex;
+  flex-direction: column;
   padding: 40px 0 0 120px;
 }
 
@@ -8,6 +11,14 @@
   .crewContainer{
     padding: 20px 50px 0;
     flex-direction: column;
+  }
+  
+}
+
+@media(max-width: 375px) {
+
+  .crewContainer{
+    flex-direction: column-reverse;
   }
   
 }

@@ -21,18 +21,11 @@ body {
   
 }
 
-@media(max-width: 425px) {
-
-  body {
-    background-image: url('./assets/home/background-home-mobile.jpg');
-  }
-  
-}
 
 @media(max-width: 376px) {
 
   body {
-    background-image: url('./assets/home/background-home-mobile.jpg');
+    background-image: url('./assets/destination/background-destination-mobile.jpg');
   }
   
 }

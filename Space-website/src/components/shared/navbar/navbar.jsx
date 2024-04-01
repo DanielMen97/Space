@@ -7,7 +7,7 @@ export const Navbar = () => {
 
   return (
     <div className={styles.navbar_container}>
-      <img src={logo}></img>
+      <img className={styles.imgLogo} src={logo}></img>
       <div className={styles.line}>
       </div>
       <img className={styles.iconHamburger} src='./src/assets/shared/icon-hamburger.svg'>

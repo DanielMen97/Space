@@ -3,34 +3,12 @@
 .sectionContainer{
   color: $color-secondary;
 
-  .headerContainer{
-    display: flex;
-    font-family: $font-secondary;
-    gap: 10px;
-    justify-content: flex-start;
-    align-items: center;
-
-    .number, .title{
-      font-size: 1.8rem;
-      font-weight: 400;
-      letter-spacing: 5px;
-    }
-
-    .number{
-      color: #888888ee;
-    }
-
-    .title{
-      color: white;
-    }
-  }
-
   .textContainer{
     display: flex;
     flex-direction: column;
     padding-top: 90px;
     height: 480px;
-    width: 700px;
+    width: 590px;
     gap: 20px;
 
     .role{

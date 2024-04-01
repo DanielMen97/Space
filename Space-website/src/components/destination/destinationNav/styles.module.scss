@@ -5,6 +5,7 @@
   font-size: 20px;
   color: $color-primary;
   letter-spacing: 2.75px;
+  text-transform: uppercase;
 
   .listContainer{
     display:flex;
@@ -26,6 +27,19 @@
       padding: 10px 0;
       border-bottom: 2px solid $color-secondary;
       color: $color-secondary;
+    }
+  }
+}
+
+@media(max-width: 376px) {
+
+  .navbar{
+    font-size: 14px;
+    letter-spacing: 2px;
+
+    .listContainer{
+      gap: 24px;
+  
     }
   }
 }
