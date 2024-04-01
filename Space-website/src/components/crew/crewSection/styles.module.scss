@@ -29,25 +29,12 @@
       padding-right: 200px;
       line-height: 30px;
     }
-
-  }
-
-  .navbarContainer{
-
   }
 }
 
 @media(max-width: 768px) {
 
   .sectionContainer{
-    
-
-    .headerContainer{
-
-      .number, .title{
-        font-size: 20px;
-      }
-    }
 
     .textContainer{
       align-items: center;
@@ -77,6 +64,39 @@
       justify-content: center;
       padding: 20px 0 30px;
 
+    }
+  } 
+}
+
+@media(max-width: 376px) {
+
+  .sectionContainer{
+    display: flex;
+    flex-direction: column-reverse;
+
+    .textContainer{
+      padding: 0;
+      height: 230px;
+
+      .role{
+        font-size: 17px;
+
+      }
+  
+      .name{
+        font-size: 25px;
+
+      }
+
+      .bio{
+        padding: 0;
+        font-size: 14px;
+        line-height: 23px;
+
+      }
+    }
+    .navbarContainer{
+      padding: 0;
     }
 
 

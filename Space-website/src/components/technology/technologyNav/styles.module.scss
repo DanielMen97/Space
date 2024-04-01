@@ -45,3 +45,19 @@
     }
   }  
 }
+
+@media (max-width: 376px) {
+
+  .navbar{
+    padding: 0;
+
+    .listContainer{
+
+      .listItemActive, .listItem{
+        font-size: 16px;
+        padding: 11px 16px;
+        border-radius: 50%;
+      }
+    }
+  }  
+}

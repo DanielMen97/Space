@@ -44,16 +44,26 @@
           border-radius: 6px;
   
         }
+      }
+    }
+  }
+}
+
+@media(max-width: 375px) {
+
+  .navbarContainer{
+ 
+    .listContainer{
+
+      .listItem{
   
-        .buttonNav{
-  
-        }
-        
-        .buttonNavActive{
+        .buttonNavActive, .buttonNav{
+          padding: 6px;
+          border-radius: 6px;
   
         }
       }
     }
   }
-
+  
 }

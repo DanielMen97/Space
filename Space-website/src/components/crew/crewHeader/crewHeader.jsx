@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
+import styles from './styles.module.scss';
 
-const CrewHeader = () => {
+export const CrewHeader = () => {
   return (
     <div className={styles.headerContainer}>
     <h2 className={styles.number}>02</h2>
@@ -9,4 +10,3 @@ const CrewHeader = () => {
   )
 }
 
-export default CrewHeader

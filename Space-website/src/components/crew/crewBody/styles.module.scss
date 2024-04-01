@@ -3,14 +3,21 @@
 .crewContainer{
   display: flex;
   flex-direction: column;
-  padding: 40px 0 0 120px;
+  padding: 20px 0 0 120px;
+
+  .crewSectionImagen{
+    display: flex;
+  }
 }
 
 @media(max-width: 768px) {
 
   .crewContainer{
     padding: 20px 50px 0;
-    flex-direction: column;
+
+    .crewSectionImagen{
+      flex-direction: column;
+    }
   }
   
 }
@@ -18,7 +25,11 @@
 @media(max-width: 375px) {
 
   .crewContainer{
-    flex-direction: column-reverse;
+    padding: 0;
+
+    .crewSectionImagen{
+      flex-direction: column-reverse;
+    }
   }
   
 }
