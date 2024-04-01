@@ -84,6 +84,35 @@
   .line{
     display: none;
   }
-  }
-  
+  } 
 }
+
+@media (max-width: 376px) {
+
+  .navbar_container {
+    padding-bottom: 0;
+    
+    img{
+      padding-right: 0;
+    }
+
+  .navbar{
+    display: none;
+
+    .list_container {
+      flex-direction: column;
+
+      .list_item{
+
+        strong{
+          display:flex;
+        }
+
+      }
+    }
+  }
+  } 
+}
+
+
+

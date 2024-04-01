@@ -4,8 +4,19 @@
   align-items: flex-end;
 
   img{
-    max-width: 500px;
-    max-height: 660px;
+   max-height: 602px;
+   max-width: 575px;
   }
+}
 
+@media(max-width: 768px) {
+
+  .imageContainer{
+  
+    img{
+     max-height: 500px;
+     
+    }
+  }
+  
 }

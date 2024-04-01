@@ -10,7 +10,11 @@ export const Navbar = () => {
       <img src={logo}></img>
       <div className={styles.line}>
       </div>
+      <img className={styles.iconHamburger} src='./src/assets/shared/icon-hamburger.svg'>
+      </img>
       <nav className={styles.navbar}>
+        <img className={styles.iconClose} src='./src/assets/shared/icon-close.svg'>
+        </img>
         <ul className={styles.list_container}>
           <NavLink
             to='/'
