@@ -40,18 +40,6 @@ export const Navbar = () => {
             <li className={styles.list_item}>
               <span><strong>03</strong> TECHNOLOGY </span></li>
           </NavLink>
-
-
-          {/* <NavLink
-            to='/'
-            className={({ isActive }) => `${isActive ? ` ${styles.LinkIsActive}` : ` ${styles.LinkIsDisable}`}`}>
-            <li className={styles.list_item}>
-              <span><strong>00</strong> HOME </span>
-            </li>
-          </NavLink>
-          <NavLink to='/destination' className={({ isActive }) => `${isActive ? ` ${styles.LinkIsActive}` : ` ${styles.LinkIsDisable}`}`}><li className={styles.list_item}><span>01</span>DESTINATION</li></NavLink>
-          <NavLink to='/crew' className={({ isActive }) => `${isActive ? ` ${styles.LinkIsActive}` : ` ${styles.LinkIsDisable}`}`}><li className={styles.list_item}><span>02</span>CREW</li></NavLink>
-          <NavLink to='/technology' className={({ isActive }) => `${isActive ? ` ${styles.LinkIsActive}` : ` ${styles.LinkIsDisable}`}`}><li className={styles.list_item}><span>03</span>TECHNOLOGY</li></NavLink> */}
         </ul>
       </nav>
     </div>

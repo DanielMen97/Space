@@ -7,6 +7,10 @@
   font-size: 16px;
   letter-spacing: 2.35px;
 
+  .iconHamburger{
+    display: none;
+  }
+
   img {
     padding-right: 40px;
   }
@@ -23,6 +27,10 @@
     background: #fff1;
     backdrop-filter: blur(25px);
 
+    .iconClose{
+      display: none;
+    }
+
     .list_container {
       display: flex;
       gap: 30px;
@@ -31,9 +39,7 @@
       .LinkIsDisable {
         text-decoration: none;
         color: white;
-        border-bottom: transparent 3px solid;
-        
-        
+        border-bottom: transparent 3px solid;    
       }
       
       .LinkIsDisable:hover {
