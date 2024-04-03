@@ -1,19 +1,21 @@
 import styles from './navbar.module.scss';
 import logo from '../../../assets/shared/logo.svg'
 import { NavLink, useLocation } from 'react-router-dom';
+import { useState } from 'react';
 
 export const Navbar = () => {
   const { pathname } = useLocation();
+  const [isOpenNavbar, setIsOpenNavbar] = useState(false)
 
   return (
     <div className={styles.navbar_container}>
       <img className={styles.imgLogo} src={logo}></img>
       <div className={styles.line}>
       </div>
-      <img className={styles.iconHamburger} src='./src/assets/shared/icon-hamburger.svg'>
+      <img className={styles.iconHamburger} onClick={() => setIsOpenNavbar(true)} src='./src/assets/shared/icon-hamburger.svg'>
       </img>
-      <nav className={styles.navbar}>
-        <img className={styles.iconClose} src='./src/assets/shared/icon-close.svg'>
+      <nav className={isOpenNavbar ? styles.navbarMobile : styles.navbar}>
+        <img className={styles.iconClose} onClick={() => setIsOpenNavbar(false)} src='./src/assets/shared/icon-close.svg'>
         </img>
         <ul className={styles.list_container}>
           <NavLink

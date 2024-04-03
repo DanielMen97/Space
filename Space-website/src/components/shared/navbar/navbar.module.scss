@@ -11,7 +11,7 @@
     display: none;
   }
 
-  img {
+  .imgLogo{
     padding-right: 40px;
   }
 
@@ -35,6 +35,17 @@
       display: flex;
       gap: 30px;
       color: white;
+
+      .list_item {
+        display: flex;
+        padding: 35px 0;
+        cursor: pointer;
+        
+        span {
+          display: flex;
+          gap: 10px;
+        }
+      } 
           
       .LinkIsDisable {
         text-decoration: none;
@@ -53,21 +64,11 @@
         border-bottom: white 3px solid;
         ;
       }
-
     }
-
   }
-
 }
 
-.list_item {
-  display: flex;
-  padding: 35px 0;
-  cursor: pointer;
-} span {
-  display: flex;
-  gap: 10px;
-}
+
 
 @media (max-width: 768px) {
 
@@ -75,7 +76,7 @@
     justify-content: space-between;
 
   .navbar{
-    padding: 0 60px !important;
+    padding: 0 60px;
 
     .list_container {
 
@@ -98,31 +99,59 @@
   .navbar_container {
     padding-bottom: 0;
 
-    .imgLogo{
-      width: 38px;
-    }
-    
-    img{
+    .iconHamburger, .imgLogo{
       padding-right: 0;
     }
 
-  .navbar{
-    display: none;
+    .iconHamburger{
+      display: block;
+    }
 
-    .list_container {
-      flex-direction: column;
+    .imgLogo{
+      width: 38px;
+    }
 
-      .list_item{
+    .navbarMobile{
+      position: fixed;
+      top: 0;
+      right: 0;
+      background: #fff1;
+      backdrop-filter: blur(25px);
+      height: 100%;
+      width:70vw;
 
-        strong{
-          display:flex;
+      .iconClose{
+        float: right;
+        margin: 30px 30px 0 0;
+      }
+
+      .list_container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 120px 0 0 40px;
+
+        .LinkIsDisable {
+          text-decoration: none;
+          color: white;
+         
+          .list_item{
+            list-style: none;
+          }
         }
 
+        .LinkIsActive {
+          text-decoration: none;
+          color: white;
+         
+          .list_item{
+            list-style: none;
+          }
+        }
       }
-    }
-  }
   } 
+  .navbar{
+    display: none;
+  }
 }
-
-
-
+}
