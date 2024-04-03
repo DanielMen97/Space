@@ -1,8 +1,9 @@
 .destinationContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 20px 50px;
+  height: 650px;
 }
 
 @media(max-width: 376px) {
