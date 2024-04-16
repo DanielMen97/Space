@@ -2,6 +2,7 @@
 
 .sectionContainer{
   color: $color-secondary;
+  width: 52%;
 
   .textContainer{
     display: flex;
@@ -35,6 +36,7 @@
 @media(max-width: 768px) {
 
   .sectionContainer{
+    width: auto;
 
     .textContainer{
       align-items: center;
