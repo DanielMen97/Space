@@ -37,6 +37,10 @@
     img{
       object-fit: cover;
     }
+
+    .imageResponsive{
+      display: none;
+    }
   }
 }
 
@@ -74,8 +78,13 @@
       padding: 20px 0;
       
       .imageTech {
-        width: 100%;
+        display: none;
       } 
+
+      .imageResponsive{
+        display: block;
+        width: 100%;
+      }
 
     }
   }

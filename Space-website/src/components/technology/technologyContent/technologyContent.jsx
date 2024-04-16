@@ -12,22 +12,11 @@ export const TechnologyContent = () => {
     },
     "description": "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!"
   })
-
   const techInfoSelect = (itemSelect) => {
     setInfoSelect(itemSelect)
   }
-
-  const [windowWidth, setWindowWidth] = useState()
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth)
-    }
-    window.addEventListener('resize', handleResize)
-    return () => {
-      window.removeEventListener('resize', handleResize)
-    };
-  }, [])
-  const imagenTecnology = (windowWidth <= 768) ? infoSelect.images.landscape : infoSelect.images.portrait
+  
+  console.log("Render")
 
   return (
     <div className={styles.contentContainer}>
@@ -42,7 +31,8 @@ export const TechnologyContent = () => {
         </article>
       </section>
       <div className={styles.imageContainer}>
-            <img className={styles.imageTech} src={imagenTecnology}></img>
+            <img className={styles.imageTech} src={infoSelect.images.portrait}></img> 
+            <img className={styles.imageResponsive} src={infoSelect.images.landscape}></img>
       </div>
     </div>
   )
