@@ -17,7 +17,7 @@ export const TechnologyContent = () => {
     setInfoSelect(itemSelect)
   }
 
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+  const [windowWidth, setWindowWidth] = useState()
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth)
@@ -27,6 +27,7 @@ export const TechnologyContent = () => {
       window.removeEventListener('resize', handleResize)
     };
   }, [])
+  const imagenTecnology = (windowWidth <= 768) ? infoSelect.images.landscape : infoSelect.images.portrait
 
   return (
     <div className={styles.contentContainer}>
@@ -41,11 +42,7 @@ export const TechnologyContent = () => {
         </article>
       </section>
       <div className={styles.imageContainer}>
-        {
-          (windowWidth <= 768) ? 
-            <img className={styles.imageTechLandscape} src={infoSelect.images.landscape}></img> : 
-            <img className={styles.imageTechPortrait} src={infoSelect.images.portrait}></img>
-        }
+            <img className={styles.imageTech} src={imagenTecnology}></img>
       </div>
     </div>
   )

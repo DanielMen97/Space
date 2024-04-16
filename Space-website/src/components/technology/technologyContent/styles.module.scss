@@ -33,7 +33,10 @@
     }    
   }
   .imageContainer{
-    display: flex;
+
+    img{
+      object-fit: cover;
+    }
   }
 }
 
@@ -68,13 +71,9 @@
     }
 
     .imageContainer{
-      width: 768px;
-      height: 310px;
-      position: relative;
-      left: -30px;
-      margin: 30px 0;
+      padding: 20px 0;
       
-      .imageTechLandscape {
+      .imageTech {
         width: 100%;
       } 
 
@@ -115,11 +114,9 @@
     }
 
     .imageContainer{
-      width: fit-content;
-      height: fit-content;
 
       .imageTechLandscape {
-        width: 385px;
+
       } 
     }
   }  
