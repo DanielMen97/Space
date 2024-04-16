@@ -33,11 +33,7 @@
     }    
   }
   .imageContainer{
-
-    .imageTechPortrait{
-      width: 500px;
-      height: 100%;
-    }
+    display: flex;
   }
 }
 
@@ -68,8 +64,7 @@
           line-height: 28px;
 
         }
-      }
-  
+      } 
     }
 
     .imageContainer{

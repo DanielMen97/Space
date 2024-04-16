@@ -79,7 +79,6 @@
   .content {
     flex-direction: column;
     align-items: center;
-    height: 100%;
 
     .sectionImages {
       padding: 60px 0 30px;
@@ -131,7 +130,6 @@
 
 @media(max-width: 376px) {
   .content {
-
 
     .sectionImages {
       padding: 40px 0 10px;

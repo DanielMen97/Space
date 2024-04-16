@@ -66,9 +66,10 @@
       }
     }
   }
+  .navbarMobile{
+    display: none;
+  }
 }
-
-
 
 @media (max-width: 768px) {
 
@@ -112,6 +113,7 @@
     }
 
     .navbarMobile{
+      display: block;
       position: fixed;
       top: 0;
       right: 0;
