@@ -54,7 +54,6 @@
       flex-direction: column;
   
       .articleContainer{
-        padding: 30px 120px;
         text-align: center;
         min-height: 325px;
 
@@ -92,41 +91,30 @@
 }
 
 
-@media(max-width: 375px) {
+@media(max-width: 376px) {
 
   .contentContainer{
 
     .sectionContainer{
 
       .articleContainer{
-        padding: 0;
-        min-height: 230px;
+        padding: 50px 0 0 0;
 
         .label{
-          padding-top: 15px;
-
+          font-size: 15px;
+          letter-spacing: 2px;
         }
   
         .name{
-          padding: 10px 0 15px;
-          font-size: 24px;
-
+          font-size: 25px;
         }
   
         .description{
-          line-height: 25px;
           font-size: 14px;
-          margin: 0 10px;
-
+          line-height: 25px;
         }
       }
     }
 
-    .imageContainer{
-
-      .imageTechLandscape {
-
-      } 
-    }
   }  
 }
